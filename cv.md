@@ -119,6 +119,11 @@ __AJAX - Validation__
         }
 ```
 
+```
+function multiply(a, b){
+  a * b
+}
+```
 
 ----------------------
 
