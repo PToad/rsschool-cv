@@ -1,11 +1,8 @@
 # CV
 
-----------------------
-
-![Фото](/images/IMG_0017.JPG)
 
 ## FULL NAME
-__Alexandr Petrov__
+## __Alexandr Petrov__
 
 ----------------------
 ## Contacts
