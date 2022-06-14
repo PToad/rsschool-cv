@@ -14,10 +14,10 @@
 ----------------------
 
 ## About me
-Опытный пользователь ПК, ОС Windows.
-Знание программного пакета Microsoft, Adobe Photoshop, Adobe Premiere Pro, Adobe After Effect и др.
-Увлекаюсь изучением языков программирования, графических программ, компьютерных игр.
-Активно слежу за индустрией современных компьютерных технологий.
+Experienced PC user, Windows operating system.
+Knowledge of Microsoft packages package, Adobe Photoshop, Adobe Premiere Pro, Adobe After Effect, etc.
+I take a great interest in studying of programming languages, graphic programs, computer games.
+I actively follow the industry of modern computer technologies.
 
 ----------------------
 
