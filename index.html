@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css">
+    <title>CV RSSCHOOL</title>
+</head>
+<body>
+
+    <header>
+        <h1>CV RSSCHOOL</h1>
+        <nav>
+            <ul>
+                <li><a href="#fullname">Full Name</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#me">About me</a></li>
+                <li><a href="#skills">Skills and knowledge</a></li>
+                <li><a href="#code">Code examples</a></li>
+                <li><a href="#ex">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#english">Foreign languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="fl" class="container dop">
+            <div id="ab">
+                <h2>About me</h2>
+                <hr>
+            </div>
+            <div  id="fullname">
+                <h2>Alexandr Petrov</h2>
+                <img src="image/IMG_0017.JPG" alt="">
+            </div>
+            <div id="me">
+                <p>Experienced PC user, Windows operating system. Knowledge of the Microsoft software package, Adobe Photoshop, Adobe Premiere Pro, Adobe After Effect, etc. I am fond of learning programming languages, graphic programs, computer games. I actively follow the industry of modern computer technologies.</p>
+            </div>
+        </section>
+        <section id="education" class="container">
+            <div class="dop1">
+                <div id="educ">
+                    <h2>Education</h2>
+                </div>
+                <div class="img">
+                    <img src="https://kvptk.edu.kz/assets/images/logo.jpeg" alt="">
+                </div>
+                <div class="cont">
+                    <h3>
+                        Karaganda Higher Polytechnic College
+                    </h3>
+                    <p>Speciality - Computing equipment and software. <br> Date of graduation - 2019.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="dop1">
+                <div class="img">
+                    <img src="image/logo-1.png" alt="">
+                </div>
+                <div class="cont">
+                    <h3>
+                        Karaganda Technical University
+                    </h3>
+                    <p>Speciality - Computing equipment and software. <br> Date of graduation - 2022.</p>
+                </div>
+            </div>   
+            <hr>
+            <div class="dop1">
+                <div class="img">
+                    <img src="image/background.png" alt="">
+                </div>
+                <div class="cont">
+                    <h3>
+                        RS School
+                    </h3>
+                    <p>Direction - front end development. <br> Course date - 2022.</p>
+                </div>
+            </div>   
+            <hr>         
+        </section>
+        <section id="ex" class="container">
+            <h2>Experience 2 years 2 months</h2>
+            <hr>
+            <p> <strong> LLP “GrandCorp”:</strong> Sales Manager Sale of goods and services of the company. Promotion of goods and services of the company. <br> June 2021 — March 2022. 9 months </p>
+            <p><strong>LLP “PortWest”:</strong> System Administrator Administration of a network of computers. Ensuring information security. Ensuring regular operation of computer hardware and software. <br> June 2019 — September 2020 1 year 4 months</p>
+        </section>
+        <section id="code" class="container">
+            <h2>Code examples</h2>
+            <hr>
+            <h3>AJAX - Validation</h3>
+            <div class="b-black">
+                <pre>
+                    <code>
+                        <span class="blue-50">console</span>.<span class="cream">log</span>(<span class="blue-50">event.target.responseText</span>);
+                        <span class="blue-50">lol</span> = <span class="blue">JSON</span>.<span class="cream">parse</span>(<span class="blue-50">event.target.responseText</span>);
+                        <span class="purple">if</span>(<span class="blue-50">lol.type</span> <span class="text-white">== </span><span class="orang">"error"</span> ){
+                          <span class="blue-50">Object</span>.<span class="cream">keys</span>(<span class="blue-50">lol.errors</span>).<span class="cream">forEach</span>(<span class="blue">function</span>(<span class="blue-50">item, i, arr</span>) {
+                          <span class="blue-50">poleName</span> = <span class="blue-50">item</span>;                      
+                          <span class="blue-50">errText</span> = <span class="blue-50">lol.errors</span>[<span class="blue-50">poleName</span>];
+                          <span class="blue-50">curInput</span> = <span class="blue-50">document</span>. <span class="cream">getElementsByName</span>(<span class="blue-50">poleName</span>)[<span class="cream">0</span>];
+                          <span class="blue-50">console</span>.<span class="cream">log</span>(<span class="blue-50">curInput</span>);
+                          <span class="blue-50">curInput</span>.<span class="blue-50">classList</span>.<span class="cream">add</span>(<span class="orang">"is-invalid"</span>);
+                          <span class="blue-50">feedback</span> = <span class="blue-50">document</span>.<span class="cream">createElement</span>(<span class="orang">'div'</span>);
+                          <span class="blue-50">feedback</span>.<span class="blue-50">classList</span>.<span class="cream">add</span>(<span class="orang">"invalid-feedback"</span>);
+                          <span class="blue-50">feedback</span>.<span class="blue-50">innerText</span> = <span class="cream">errText</span>;
+                          <span class="blue-50">curInput</span>.<span class="blue-50">parentElement</span>.<span class="cream">appendChild</span>(<span class="blue-50">feedback</span>);
+                          });
+                        } <span class="purple">else</span>{
+                          <span class="cream">alert</span>(<span class="blue-50">lol.msg</span>);
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <section id="contacts" class="container">
+            <div class="cont-m">
+                <h2>Contacts</h2>
+                <hr>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +7 (777) 891-28-61</li>
+                    <li><i class="fas fa-at"></i> Email: 99111942@mail.ru</li>
+                    <li><i class="fab fa-discord"></i> Petrov Alexandr (@PToad)</li>
+                    <li><i class="fab fa-github"></i> @PToad</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills" class="container">
+            <div class="cont-m">
+                <h2>Skills and knowledge</h2>
+                <hr>
+                <h3>Programming languages</h3>
+                <ul>
+                    <li><i class="fab fa-php"></i> PHP;</li>
+                    <li><i class="fab fa-html5"></i> HTML/CSS;</li>
+                    <li><i class="fas fa-code"></i> Delphi;</li>
+                    <li><i class="fab fa-python"></i> Pyton;</li>
+                    <li><i class="fab fa-js"></i> JavaScript.</li>
+                </ul>
+                <h3>Framework</h3>
+                <ul>
+                    <li><i class="fab fa-bootstrap"></i> Bootstrap 5;</li>
+                    <li><i class="fab fa-mdb"></i> MDBootstrap;</li>
+                    <li><i class="fab fa-laravel"></i> Laravel.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="english" class="container">
+            <div class="cont-m cont-ul">
+                <h2>Foreign languages</h2>
+                <hr>
+                <ul>
+                    <li> English (A2)</li>
+                    <li> Russian (native)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://rs.school/js/"><img src="image/background.png" alt=""></a>
+        </p>
+        <span>&copy; 2022 by Petrov Alexandr</span>
+        <a href="https://github.com/PToad">Мой GitHub</a>
+    </footer>
+</body>
+</html>
